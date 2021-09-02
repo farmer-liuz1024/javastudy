@@ -7,4 +7,4 @@
 
 
 [GitHub](https://github.com/Warriorsliuzhu)
-[Get Started](#Spring)
+[Get Started](#JavaStudy)
