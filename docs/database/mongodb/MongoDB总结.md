@@ -154,7 +154,7 @@ MongoDB 提供了可用于 32 位和 64 位系统的预编译二进制包，你�
 **Linux-MongoDB**
 
 
-## 概念解析
+## 概念解释
 
 **什么是MongoDB**
 
@@ -196,13 +196,48 @@ MongoDB 提供了可用于 32 位和 64 位系统的预编译二进制包，你�
 通过下图实例，我们也可以更直观的的了解Mongo中的一些概念：
 ![avatar](../../../../media/pictures/mysql-mongodb.png)
 
-_id是一个12字节的十六进制数，保证每一份文件的唯一性。您可以自己去设置_id插入文档。如果没有提供，那么MongoDB的每个文档提供了一个独特的ID。
-这12个字节：
-前4个字节为当前时间戳；
-未来3个字节的机器ID；
-接下来的2个字节的MongoDB的服务进程id；
-剩余3个字节是简单的增量值
-一个字节等于2位十六进制（一位十六进制的数等于四位二进制的数。一个字节等于8位二进制数）
+**ObjectId**
+
+ObjectId类似唯一主键，可以很快的生成和排序，包含12bytes，含义是：
+
+<img src="./media/pictures/mongodb/objectid.jpeg" />
+
+- 前4个字节表示创建unix时间戳，格林威治的UTC时间，比北京时间晚8小时
+- 接下来的3个字节是机器标识码
+- 接下来的2个字节是进程ip组成的pid
+- 最后三个字节是随机数
+
+MongoDB中存储的文档必须有一个_id键，这个键可以是任何类型，但是默认是ObjectId对象，由于ObjectId中保存了创建的时间戳，所以你不需要为你的文档保存时间戳字段，
+你可以通过getTimeStamp函数来获取文档的创建时间：
+```javascript
+> var newObject = ObjectId()
+> newObject.getTimestamp()
+ISODate("2017-11-25T07:21:10Z")
+```
+
+**字符串**
+
+BSON字符串都是UTF-8编码 
+
+**时间戳**
+
+表示当前距离Unix新纪元（1970年1月1号）的毫秒数，日期类型是有符号的，负数表示1970年之前的日期。
+
+```javascript
+> var mydate1 = new Date()     //格林尼治时间
+> mydate1
+ISODate("2018-03-04T14:58:51.233Z")
+> typeof mydate1
+object
+```
+
+```javascript
+> var mydate2 = ISODate() //格林尼治时间
+> mydate2
+ISODate("2018-03-04T15:00:45.479Z")
+> typeof mydate2
+object
+```
 
 **示例文档**
 这是一个Json对象键值存储的文档结构
@@ -236,8 +271,33 @@ _id是一个12字节的十六进制数，保证每一份文件的唯一性。您
 
 ## 基本操作
 
+### 创建数据库 ###
 
-## 聚合aggreate
+**语法**
+
+MongoDB创建数据库的语法格式如下：
+```sql
+use testdb;
+```
+如果数据库存在则切换到指定数据库，数据库不存在，则创建数据库。
+
+**实例**
+以创建testdb为例
+```sql
+> use testdb
+switched to db testdb
+> db
+testdb
+> 
+```
+
+### 删除数据库 ###
+
+**删除数据库**
+
+
+
+## 高级操作
 
 
 
