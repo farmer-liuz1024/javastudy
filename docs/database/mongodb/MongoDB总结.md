@@ -290,6 +290,15 @@ switched to db testdb
 testdb
 > 
 ```
+如果你想查看所有数据库，可以使用 show dbs 命令：
+```sql
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+>
+```
+啊啊啊，为什么我们创建的testdb不在数据库的列表中， 要显示它，我们需要向 testdb 数据库插入一些数据。
 
 
 
