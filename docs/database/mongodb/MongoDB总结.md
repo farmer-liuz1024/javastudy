@@ -271,7 +271,7 @@ object
 
 ## 基本操作
 
-### 创建数据库 ###
+### MongoDB创建数据库 ###
 
 **语法**
 
@@ -299,14 +299,108 @@ local   0.000GB
 >
 ```
 啊啊啊，为什么我们创建的testdb不在数据库的列表中， 要显示它，我们需要向 testdb 数据库插入一些数据。
+```sql
+> db.testdb.insert({"name":"我的mongodb"})
+WriteResult({ "nInserted" : 1 })
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+testdb  0.000GB
+```
+Mongodb中默认的数据库为test，如果没有创建新库，插入的数据都会在test数据库中。
 
 
+### MongoDB删除数据库 ###
 
-### 删除数据库 ###
+**语法**
 
-**删除数据库**
+```sql
+db.dropDatabase()
+```
 
+**实例**
 
+比如说删除testdb数据，首先切换到testdb数据库,然后执行删除命令,再使用show db命名查看是否已被删除。
+
+```sql
+> use testdb
+switched to db testdb
+>
+> db.dropDatabase()
+{ "dropped" : "demodb", "ok" : 1 }
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+```
+
+### MongoDB创建集合 ###
+
+MongoDB中使用createCollection()来创建集合，语法格式为:
+```sql
+db.createCollection(name, options)
+```
+参数说明
+
+- name: 要创建的集合名称
+- options: 可选参数, 指定有关内存大小及索引的选项
+
+**实例**
+
+在test库中创建demo集合，然后使用 show collections 或 show tables 命令查看集合，在MongoDB中不需要创建集合，插入数据的时候会自动创建集合
+```sql
+> use test
+switched to db test
+> db.createCollection("demo")
+{ "ok" : 1 }
+>
+
+> db.mydoc.insert({"name" : "我的MongoDB"})
+> show collections
+mydoc
+...
+```
+
+### MongoDB删除集合 ###
+
+Mongodb中使用drop()方法删除集合,如果成功删除选定集合，则 drop() 方法返回 true，否则返回 false。
+
+**语法格式**
+
+```sql
+db.collection.drop()
+```
+**实例**
+
+在数据库mydb中，先通过show collections命令查询已存在的集合
+
+```sql
+>use mydb
+switched to db mydb
+>show collections
+mydoc
+>
+```
+
+然后删除mydoc，在通过show collections查询mydb中的集合
+```sql
+>db.mydoc.drop()
+true
+>
+
+>show collections
+>
+```
+从结果中可以看出 mydoc 集合已被删除。
+
+### MongoDB创建文档 ###
+
+### MongoDB更新文档 ###
+
+### MongoDB删除文档 ###
+
+### MongoDB查询文档 ###
 
 ## 高级操作
 
