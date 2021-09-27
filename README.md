@@ -1,12 +1,11 @@
 
 
-> 这是一个神奇地方,我的快乐你想象不到！！！
+> 所谓的21世纪“新型农民工”其实指的就是在一二线大城市当中的大楼工作，但是吃饭是在普通的摊馆吃饭，住在普通的居民房小区当中，睡在普通的木床上面。
 
-![](https://throwable-blog-1256189093.cos.ap-guangzhou.myqcloud.com/static/img/error.jpg)
 ![](./media/pictures/it.jpg)
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 
 ## 计算机基础
