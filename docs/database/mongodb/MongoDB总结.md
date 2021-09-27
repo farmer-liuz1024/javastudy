@@ -408,7 +408,7 @@ db.COLLECTION_NAME.insert(document)或db.COLLECTION_NAME.save(document)
 * save() 若插入的数据主键存在，则更新数据，否则插入数据。但是在新版本中已经将此方法废弃，可以使用db.collection.insertOne()或db.collection.replaceOne()代替
 
 3.2版本之后新增了db.collection.inertOne()和db.collection.insertMany()
-* db.collection.insertOne()向集合中插入了一个新的文档，语法格式如下：
+db.collection.insertOne()向集合中插入了一个新的文档，语法格式如下：
 ```sql
 db.collection.insertOne(
    <document>,
@@ -417,6 +417,20 @@ db.collection.insertOne(
    }
 )
 ```
+db.collection.insertMany()向集合中插入了多个文档，语法格式如下：
+```sql
+db.collection.insertMany(
+   [ <document 1> , <document 2>, ... ],
+   {
+      writeConcern: <document>,
+      ordered: <boolean>
+   }
+)
+```
+参数说明
+* document：要写入的文档
+* writeConcern：写入策略，默认为1表示要求写确认，0为不要求
+* orderd：指定是否顺序写入，默认为true，按顺序写入
 
 ### MongoDB更新文档 ###
 
