@@ -409,7 +409,7 @@ db.COLLECTION_NAME.insert(document)或db.COLLECTION_NAME.save(document)
 
 3.2版本之后新增了db.collection.inertOne()和db.collection.insertMany()
 * db.collection.insertOne()向集合中插入了一个新的文档，语法格式如下：
-```
+```sql
 db.collection.insertOne(
    <document>,
    {
