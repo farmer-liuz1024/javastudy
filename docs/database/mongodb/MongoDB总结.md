@@ -396,6 +396,28 @@ true
 
 ### MongoDB创建文档 ###
 
+本章介绍如何将数据插入到MongoDB的集合中
+
+**插入文档**
+
+MongoDB使用insert()或save方法向集合中插入文档，语法如下：
+```sql
+db.COLLECTION_NAME.insert(document)或db.COLLECTION_NAME.save(document)
+```
+* insert() 若插入的数据主键重复，则会抛出org.springframework.dao.DuplicateKeyException异常，表示主键已存在，不会保持当前数据
+* save() 若插入的数据主键存在，则更新数据，否则插入数据。但是在新版本中已经将此方法废弃，可以使用db.collection.insertOne()或db.collection.replaceOne()代替
+
+3.2版本之后新增了db.collection.inertOne()和db.collection.insertMany()
+* db.collection.insertOne()向集合中插入了一个新的文档，语法格式如下：
+```
+db.collection.insertOne(
+   <document>,
+   {
+      writeConcern: <document>
+   }
+)
+```
+
 ### MongoDB更新文档 ###
 
 ### MongoDB删除文档 ###
