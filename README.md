@@ -48,9 +48,6 @@
 
 ### Netty
 
-### ShardingSphere
-
-1. **[Sharding-jdbc](./docs/framework/shardingsphere/数据库分片.md)**
 
 
 ## 数据库
@@ -68,7 +65,8 @@
 
 ## 数据库中间件
 
-### Sharing-jdbc
+### ShardingSphere
+1. **[Sharding-jdbc](./docs/framework/shardingsphere/数据库分片.md)**
 
 ## 消息队列
 
