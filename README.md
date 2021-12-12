@@ -48,6 +48,11 @@
 
 ### Netty
 
+### ShardingSphere
+
+1. **[Sharding-jdbc](./docs/framework/shardingsphere/数据库分片.md)**
+
+
 ## 数据库
 
 ### MySQL
@@ -61,6 +66,9 @@
 
 ### ElasticSearch 
 
+## 数据库中间件
+
+### Sharing-jdbc
 
 ## 消息队列
 
