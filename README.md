@@ -4,9 +4,13 @@
 
 ![](./media/pictures/it.jpg)
 
+欢迎访问
+[Gitee 在线阅读地址](https://farmer-it.gitee.io/javastudy)（速度更快，图片可以快速加载出来）
 
-<br/><br/><br/><br/><br/><br/><br/>
+[Github 在线阅读地址](https://farmer-liuz1024.github.io/javastudy/#/)（速度相对较慢）
 
+
+<br/><br/>
 
 ## 计算机基础
 
