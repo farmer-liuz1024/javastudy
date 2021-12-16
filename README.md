@@ -67,7 +67,7 @@
 ## 数据库中间件
 
 ### ShardingSphere
-1. **[Sharding-jdbc](./docs/framework/shardingsphere/数据库分片.md)**
+1. **[Sharding-jdbc分库分表总结](./docs/framework/shardingsphere/数据库分片.md)**
 
 ## 消息队列
 
