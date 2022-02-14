@@ -78,8 +78,12 @@
 1. **[Kafka](./doc/Kafaka.md)**
 
 ## 工具
-### git
-1. **[git常用命令](./docs/tools/git/git.md)**
+### git命令
+**[git常用命令](./docs/tools/git/git.md)**
+
+### CentOS7防火墙设置
+**[CentOS7防火墙](./docs/tools/centos/防火墙设置.md)**
+
 
 ### 虚拟服务器
 
