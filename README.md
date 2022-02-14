@@ -78,8 +78,9 @@
 1. **[Kafka](./doc/Kafaka.md)**
 
 ## 工具
-### git命令
-**[git常用命令](./docs/tools/git/git.md)**
+### git
+1. **[git常用命令](./docs/tools/git/git.md)**
+2. **[如何在一台电脑上同时使用Gitee和Github](./docs/tools/git/gitee_and_github.md)**
 
 ### CentOS7防火墙设置
 **[CentOS7防火墙](./docs/tools/centos/防火墙设置.md)**
