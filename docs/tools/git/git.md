@@ -259,3 +259,19 @@ $ git revert [commit]
 $ git stash
 $ git stash pop
 ```
+
+## 示例
+```
+git fetch origin  更新远程分支
+git branch -a  查看远程分支
+git pull origin : shop_relation  删除远程分支
+git branch -d shop_relation 删除本地分支
+git fetch origin 远程分支名称：本地分支名称 
+git checkout  本地分支名称
+
+当前的分支是master  git checkout master 
+git merge issueFix 把issueFix中的内容Merge进来（）
+
+git pull upstream master
+更新ss源码到本地的master
+```
