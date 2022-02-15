@@ -1,7 +1,7 @@
 
 
 > 所谓的21世纪“新型农民工”其实指的就是在一二线大城市当中的大楼工作，但是吃饭是在普通的摊馆吃饭，住在普通的居民房小区当中，睡在普通的木床上面。
-
+<script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1280857311&web_id=1280857311"></script>
 ![](./media/pictures/it.jpg)
 
 [Gitee 在线阅读地址](https://farmer-it.gitee.io/javastudy)（速度更快，图片可以快速加载出来）
