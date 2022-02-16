@@ -1,7 +1,7 @@
 
 
 > 所谓的21世纪“新型农民工”其实指的就是在一二线大城市当中的大楼工作，但是吃饭是在普通的摊馆吃饭，住在普通的居民房小区当中，睡在普通的木床上面。
-<script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1280857311&web_id=1280857311"></script>
+
 ![](./media/pictures/it.jpg)
 
 [Gitee 在线阅读地址](https://farmer-it.gitee.io/javastudy)（速度更快，图片可以快速加载出来）
@@ -81,8 +81,8 @@
 ### git
 1. **[git常用命令](./docs/tools/git/git.md)**
 2. **[如何在一台电脑上同时使用Gitee和Github](./docs/tools/git/gitee_and_github.md)**
-3. **[gitlab或github下fork后如何同步源的新更新内容]()**
-4. **[怎么给开源项目提PR？]()**
+3. **[gitlab或github下fork后如何同步源的新更新内容](./docs/tools/git/gitee_or_github_upstream.md)**
+4. **[怎么给开源项目提PR？](./docs/tools/git/pr.md)**
 
 ### CentOS7防火墙设置
 **[CentOS7防火墙](./docs/tools/centos/防火墙设置.md)**
