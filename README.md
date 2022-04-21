@@ -91,8 +91,7 @@
 ## 开发基础
 
 ### 认证授权
-1. **[Cookie、Session、Token、JWT](./docs/basis/认证授权.md)**
+**[Cookie、Session、Token、JWT](./docs/basis/认证授权.md)**
 
 
-### 虚拟服务器
 
